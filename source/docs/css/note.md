@@ -20,20 +20,20 @@ title: 注释规范
 
 ``` css
 /* Comment Text */
-.jdc{}
+.sw{}
 
 /* Comment Text */
-.jdc{}
+.sw{}
 ```
 
 *不推荐：*
 
 ```css
 /*Comment Text*/
-.jdc{
+.sw{
 	display: block;
 }
-.jdc{
+.sw{
 	display: block;/*Comment Text*/
 }
 ```
@@ -72,8 +72,8 @@ title: 注释规范
 @charset "UTF-8";
 /**
  * @desc File Info
- * @author Author Name
- * @date 2015-10-10
+ * @author CVTEr
+ * @date 2018-01-01
  */
 ```
 

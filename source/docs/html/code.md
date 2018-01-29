@@ -5,19 +5,12 @@ title: 代码规范
 
 一个DOCTYPE必须包含以下部分，并严格按照顺序出现：
 
-> 1. A string that is an ASCII case-insensitive match for the string "<!DOCTYPE".
-> 2. One or more space characters.
-> 3. A string that is an ASCII case-insensitive match for the string "html".
-> 4. Optionally, a DOCTYPE legacy string or an obsolete permitted DOCTYPE string (defined below).
-> 5. Zero or more space characters.
-> 6. A ">" (U+003E) character.
-
-1. 一个ASCII字符串 "<!DOCTYPE" ，大小写不敏感
-2. 一个或多个空白字符
-3. 一个ASCII字符串"html"，大小写不敏感
-4. 一个可选的历史遗留的DOCTYPE字符串 （[DOCTYPE legacy string](http://www.w3.org/TR/2014/REC-html5-20141028/syntax.html#doctype-legacy-string)），或者一个可选的已过时但被允许的DOCTYPE字符串 （[obsolete permitted DOCTYPE string](http://www.w3.org/TR/2014/REC-html5-20141028/syntax.html#obsolete-permitted-doctype-string)） 字符串
-5. 一个或多个空白字符
-6. 一个编码为 U+003E 的字符 “&gt;”
+> 1. 一个ASCII字符串 "<!DOCTYPE" ，大小写不敏感
+> 2. 一个或多个空白字符
+> 3. 一个ASCII字符串"html"，大小写不敏感
+> 4. 一个可选的历史遗留的DOCTYPE字符串 （[DOCTYPE legacy string](http://www.w3.org/TR/2014/REC-html5-20141028/syntax.html#doctype-legacy-string)），或者一个可选的已过时但被允许的DOCTYPE字符串 （[obsolete permitted DOCTYPE string](http://www.w3.org/TR/2014/REC-html5-20141028/syntax.html#obsolete-permitted-doctype-string)） 字符串
+> 5. 一个或多个空白字符
+> 6. 一个编码为 U+003E 的字符 “&gt;”
 
 ### 团队约定
 
@@ -73,23 +66,16 @@ Lang属性的取值应该遵循互联网工程任务组--IETF（The Internet Eng
 
 ## CHARSET
 
-> Because the character sets in ISO-8859 was limited in size, and not compatible in multilingual environments, the Unicode Consortium developed the Unicode Standard.
+> 因为 ISO-8859 中字符集大小是有限的，且在多语言环境中不兼容，所以 Unicode 联盟开发了 Unicode 标准。
 > 
-> The Unicode Standard covers (almost) all the characters, punctuations, and symbols in the world.
+> Unicode 标准覆盖了（几乎）所有的字符、标点符号和符号。
 > 
-> Unicode enables processing, storage, and transport of text independent of platform and language.
+> Unicode 使文本的处理、存储和运输，独立于平台和语言。
 > 
-> The default character encoding in HTML-5 is UTF-8.
-
-因为 ISO-8859 中字符集大小是有限的，且在多语言环境中不兼容，所以 Unicode 联盟开发了 Unicode 标准。
-
-Unicode 标准覆盖了（几乎）所有的字符、标点符号和符号。
-
-Unicode 使文本的处理、存储和运输，独立于平台和语言。
-
-HTML-5 中默认的字符编码是 UTF-8
+> HTML-5 中默认的字符编码是 UTF-8
 
 参阅 [HTML Unicode (UTF-8) Reference](http://www.w3schools.com/charsets/ref_html_utf8.asp)
+
 
 ### 团队约定
 
@@ -127,12 +113,10 @@ HTML元素共有以下5种：
 
 元素标签的闭合应遵循以下原则：
 
-> Tags are used to delimit the start and end of elements in the markup. Raw text, escapable raw text, and normal elements have a start tag to indicate where they begin, and an end tag to indicate where they end. The start and end tags of certain normal elements can be omitted, as described below in the section on optional tags. Those that cannot be omitted must not be omitted. Void elements only have a start tag; end tags must not be specified for void elements. Foreign elements must either have a start tag and an end tag, or a start tag that is marked as self-closing, in which case they must not have an end tag.
-
-* 原始文本元素、RCDATA元素以及常规元素都有一个开始标签来表示开始，一个结束标签来表示结束。
-* [某些元素的开始和结束标签是可以省略的](http://www.w3.org/TR/html5/syntax.html#optional-tags)，如果规定标签不能被省略，那么就绝对不能省略它。
-* 空元素只有一个开始标签，且不能为空元素设置结束标签。
-* 外来元素可以有一个开始标签和配对的结束标签，或者只有一个自闭合的开始标签，且后者情况下该元素不能有结束标签。
+> 1. 原始文本元素、RCDATA元素以及常规元素都有一个开始标签来表示开始，一个结束标签来表示结束。
+> 2. [某些元素的开始和结束标签是可以省略的](http://www.w3.org/TR/html5/syntax.html#optional-tags)，如果规定标签不能被省略，那么就绝对不能省略它。
+> 3. 空元素只有一个开始标签，且不能为空元素设置结束标签。
+> 4. 外来元素可以有一个开始标签和配对的结束标签，或者只有一个自闭合的开始标签，且后者情况下该元素不能有结束标签。
 
 ### 团队约定
 

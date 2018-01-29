@@ -102,7 +102,7 @@ ClassName的命名应该尽量精短、明确，必须以**字母开头命名**�
 业务公共模块：以 `业务名_mod_` 开头
 
 ```html
-<div class="paipai_mod_yours"></div>
+<div class="sw_mod_yours"></div>
 ```
 
 ## 常用命名推荐

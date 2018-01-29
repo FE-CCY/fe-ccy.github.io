@@ -26,3 +26,7 @@ docs:
   js:
     js_language: js/language.html
     js_code: js/code.html
+  other:
+    other_markdown: other/markdown.html
+    other_bookmark: other/bookmark.html
+

@@ -6,9 +6,9 @@
     <nav id="main-nav" class="main-nav">
       <ul>
         {{ header_menu('main-nav') }}
-        <li class="main-nav-item">
+        <!-- <li class="main-nav-item">
           <a href="https://github.com/{{ config.github }}" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
-        </li>
+        </li> -->
       </ul>
     </nav>
     <div id="lang-select-wrap" class="lang-select-wrap">
@@ -19,14 +19,14 @@
         {% endfor %}
       </select>
     </div>
-    <div id="search-btn-wrap" class="main-nav-item search-btn-wrap">
+    <!-- <div id="search-btn-wrap" class="main-nav-item search-btn-wrap">
       <a id="search-btn" class="main-nav-link st-search-launcher search-btn"><i class="fa fa-search"></i></a>
-    </div>
+    </div> -->
     <a id="mobile-nav-toggle" class="mobile-nav-toggle">
       <span class="mobile-nav-toggle-bar"></span>
       <span class="mobile-nav-toggle-bar"></span>
       <span class="mobile-nav-toggle-bar"></span>
     </a>
-    <a id="mobile-search-btn" class="st-search-launcher mobile-search-btn"></a>
+    <!-- <a id="mobile-search-btn" class="st-search-launcher mobile-search-btn"></a> -->
   </div>
 </header>

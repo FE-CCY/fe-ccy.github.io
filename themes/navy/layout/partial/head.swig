@@ -32,12 +32,12 @@
   {{ css('css/navy') }}
   <!-- endbuild -->
   <!-- RSS -->
-  {{ feed_tag('atom.xml') }}
+  <!-- {{ feed_tag('atom.xml') }} -->
   <!-- Open Graph -->
-  {{ open_graph({
+  <!-- {{ open_graph({
     fb_admins: config.fb_admins,
     twitter_site: config.twitter
-  }) }}
+  }) }} -->
   <!-- Swiftype -->
   <meta class="swiftype" name="title" data-type="string" content="{{ page.title || config.title }}">
   <!-- Baidu Analytics -->

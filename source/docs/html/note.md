@@ -4,15 +4,13 @@ title: 注释规范
 
 HTML注释规范写法应该遵循以下标准：
 
-> Comments must start with the four character sequence U+003C LESS-THAN SIGN, U+0021 EXCLAMATION MARK, U+002D HYPHEN-MINUS, U+002D HYPHEN-MINUS (&lt;!--). Following this sequence, the comment may have text, with the additional restriction that the text must not start with a single "&gt;" (U+003E) character, nor start with a U+002D HYPHEN-MINUS character (-) followed by a "&gt;" (U+003E) character, nor contain two consecutive U+002D HYPHEN-MINUS characters (--), nor end with a U+002D HYPHEN-MINUS character (-). Finally, the comment must be ended by the three character sequence U+002D HYPHEN-MINUS, U+002D HYPHEN-MINUS, U+003E GREATER-THAN SIGN (--&gt;).
-
-* 必须以4个有序字符开始：编码为 U+003C LESS-THAN SIGN 的小于号, 编码为 U+0021 EXCLAMATION MARK 的感叹号, 编码为 U+002D HYPHEN-MINUS 横线, 编码为 U+002D HYPHEN-MINUS横线 ，即 “&lt;!--”
-* 在此之后是注释内容，注释的内容有以下限制：
+> 1. 必须以4个有序字符开始：编码为 U+003C LESS-THAN SIGN 的小于号, 编码为 U+0021 EXCLAMATION MARK 的感叹号, 编码为 U+002D HYPHEN-MINUS 横线, 编码为 U+002D HYPHEN-MINUS横线 ，即 “&lt;!--”
+> 2. 在此之后是注释内容，注释的内容有以下限制：
 	* 不能以单个 "&gt;" (U+003E) 字符开始
 	* 不能以由 “-“（U+002D HYPHEN-MINUS）和 ”&gt;” (U+003E) 组合的字符开始，即 “-&gt;”
 	* 不能包含两个连续的 U+002D HYPHEN-MINUS 字符，即 “--”
 	* 不能以一个 U+002D HYPHEN-MINUS 字符结束，即 “-”
-* 必须以3个有序字符结束：U+002D HYPHEN-MINUS, U+002D HYPHEN-MINUS, U+003E GREATER-THAN SIGN，即 “--&gt;”
+> 3. 必须以3个有序字符结束：U+002D HYPHEN-MINUS, U+002D HYPHEN-MINUS, U+003E GREATER-THAN SIGN，即 “--&gt;”
 
 标准写法：
 

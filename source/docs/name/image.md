@@ -8,10 +8,9 @@ title: 图片命名
 **图片业务（可选） +（mod_）图片功能类别（必选）+ 图片模块名称（可选） + 图片精度（可选）**
 
 * 图片业务：
-	- pp_：拍拍
+	- sw_：视睿
+	- mx_：maxhub
 	- wx_：微信
-	- sq_：手Q
-	- jd_：京东商城
 	- ...
 
 
@@ -30,7 +29,7 @@ title: 图片命名
 
 	- goodslist：商品列表 
 	- goodsinfo：商品信息
-	- userava	tar：用户头像
+	- useravatar：用户头像
 	- ...
 	
 	
@@ -53,22 +52,13 @@ title: 图片命名
 	wx_btn_goodlist.png
 	btn_goodlist.png
 
-## 交叉业务协作
-
-业务交叉协作的时候，为了避免图片命名冲突，建议图片名加上业务和模块前辍，如拍拍侧和手Q侧的业务交叉合作时，侧栏导航icon雪碧图命名：
-
-	推荐：
-	pp_icon_mod_sidenav.png
-
-	不推荐：
-	icon_mod_sidenav.png
 
 处理高清图片的时候，命名应该加上图片相应的精度说明
 
 	推荐：
-	jdc_logo@1x.png
-	jdc_logo@2x.png
+	sw_logo@1x.png
+	sw_logo@2x.png
 
 	不推荐：
-	jdc_logo.png
-	jdc_logo_retina.png
+	sw_logo.png
+	sw_logo_retina.png

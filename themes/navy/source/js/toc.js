@@ -7,8 +7,8 @@
   	if (!toc) return;
 
   	tocTop.addEventListener('click', function(e){
-    	e.preventDefault();
-    	document.body.scrollTop = 0;
+      e.preventDefault();
+      $(document).scrollTop(0);
   	});
 
 	$(function(){

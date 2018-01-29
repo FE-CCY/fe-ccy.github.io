@@ -5,12 +5,13 @@ title: HTML/CSS文件命名
 
 ``` html
 	<!-- HTML -->
-	jdc.html
-	jdc_list.html
-	jdc_detail.html
-
+	cvte.html
+	cvte_list.html
+	cvte_detail.html
+```
+``` html
 	<!-- SASS -->
-	jdc.scss
-	jdc_list.scss
-	jdc_detail.scss
+	cvte.scss
+	cvte_list.scss
+	cvte_detail.scss
 ```

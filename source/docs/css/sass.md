@@ -21,9 +21,7 @@ Sass 使用 “缩进” 代替 “花括号” 表示属性属于某个选择�
 
 ## 编码格式
 
-> When running on Ruby 1.9 and later, Sass is aware of the character encoding of documents. Sass follows the CSS spec to determine the encoding of a stylesheet, and falls back to the Ruby string encoding. This means that it first checks the Unicode byte order mark, then the @charset declaration, then the Ruby string encoding. If none of these are set, it will assume the document is in UTF-8.
-
-当在 Ruby1.9或更新的版本运行的时候，SASS 能识辨文档的字符编码。SASS 遵循 CSS 规范去确定样式文件的编码，进而转回 Ruby 字符串编码。这意味着SASS编译的时候会首先检测 BOM，然后到 @charset 声明，再到 Ruby 字符串编码，如果以上都没有设置，SASS 会认为文档的编码为 UTF-8
+> 当在 Ruby1.9或更新的版本运行的时候，SASS 能识辨文档的字符编码。SASS 遵循 CSS 规范去确定样式文件的编码，进而转回 Ruby 字符串编码。这意味着SASS编译的时候会首先检测 BOM，然后到 @charset 声明，再到 Ruby 字符串编码，如果以上都没有设置，SASS 会认为文档的编码为 UTF-8
 
 ### 团队约定
 
@@ -55,8 +53,8 @@ SCSS 文件内
 
 /**
  * @desc File Info
- * @author liqinuo
- * @date 2015-10-10
+ * @author CVTEr
+ * @date 2018-01-01
  */
 
 /* Module A
@@ -87,24 +85,24 @@ SCSS 文件内
 
 ```scss
 /* CSS */
-.jdc {}
-body .jdc {}
+.sw {}
+body .sw {}
 
 /* SCSS */
-.jdc {
+.sw {
     body & {}
 }
 ```
 
 ```scss
 /* CSS */
-.jdc {}
-.jdc_cover {}
-.jdc_info {}
-.jdc_info_name {}
+.sw {}
+.sw_cover {}
+.sw_info {}
+.sw_info_name {}
 
 /* SCSS */
-.jdc {
+.sw {
     &_cover {}
     &_info {
         &_name {}
@@ -116,7 +114,7 @@ body .jdc {}
 
 ```scss
 /* CSS */
-.jdc {
+.sw {
     background-color: red;
     background-repeat: no-repeat;
     background-image: url(/img/icon.png);
@@ -124,7 +122,7 @@ body .jdc {}
 }
 
 /* SCSS */
-.jdc {
+.sw {
     background: {
         color: red;
         repeat: no-repeat;
@@ -140,14 +138,14 @@ body .jdc {}
 
 ```scss
 // CSS
-.jdc {
+.sw {
     color: red;
     border-color: red;
 }
 
 // SCSS
 $color: red;
-.jdc {
+.sw {
     color: $color;
     border-color: $color;
 }
@@ -159,11 +157,11 @@ $color: red;
 
 ```scss
 // CSS
-.jdc_1 {
+.sw_1 {
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
-.jdc_2 {
+.sw_2 {
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
@@ -173,20 +171,20 @@ $color: red;
     -webkit-border-radius: $radius;
     border-radius: $radius;
 }
-.jdc_1 {
+.sw_1 {
     @include radius; //参数使用默认值
 }
-.jdc_2 {
+.sw_2 {
     @include radius(10px);
 }
 
 
 
 // CSS
-.jdc_1 {
+.sw_1 {
     background: url(/img/icon.png) no-repeat -10px 0;
 }
-.jdc_2 {
+.sw_2 {
     background: url(/img/icon.png) no-repeat -20px 0;
 }
 
@@ -194,10 +192,10 @@ $color: red;
 @mixin icon($x:0, $y:0) {
     background: url(/img/icon.png) no-repeat $x, $y;
 }
-.jdc_1 {
+.sw_1 {
     @include icon(-10px, 0);
 }
-.jdc_2 {
+.sw_2 {
     @include icon(-20px, 0);
 }
 ```
@@ -213,7 +211,7 @@ $color: red;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-.jdc {
+.sw {
     @extend %borderbox;
 }
 ```
@@ -222,23 +220,23 @@ $color: red;
 
 ```scss
 // CSS
-.jdc_1 {
+.sw_1 {
     font-size: 12px;
     color: red;
 }
-.jdc_2 {
+.sw_2 {
     font-size: 12px;
     color: red;
     font-weight: bold;
 }
 
 // SCSS
-.jdc_1 {
+.sw_1 {
     font-size: 12px;
     color: red;
 }
-.jdc_2 {
-    @extend .jdc_1;
+.sw_2 {
+    @extend .sw_1;
     font-weight: bold;
 }
 
@@ -247,10 +245,10 @@ $color: red;
     font-size: 12px;
     color: red;
 }
-.jdc_1 {
+.sw_1 {
     @extend %font_red;
 }
-.jdc_2 {
+.sw_2 {
     @extend %font_red;
     font-weight: bold;
 }
@@ -261,13 +259,13 @@ $color: red;
 
 ```scss
 // CSS
-.jdc_1 {background-position: 0 -20px;}
-.jdc_2 {background-position: 0 -40px;}
-.jdc_3 {background-position: 0 -60px;}
+.sw_1 {background-position: 0 -20px;}
+.sw_2 {background-position: 0 -40px;}
+.sw_3 {background-position: 0 -60px;}
 
 // SCSS
 @for $i from 1 through 3 {
-    .jdc_#{$i} {
+    .sw_#{$i} {
         background-position: 0 (-20px) * $i;
     }
 }
@@ -279,34 +277,34 @@ $color: red;
 
 ```scss
 // CSS
-.jdc_list {
+.sw_list {
     background-image: url(/img/jdc_list.png);
 }
-.jdc_detail {
+.sw_detail {
     background-image: url(/img/jdc_detail.png);
 }
 
 // SCSS
 @each $name in list, detail {
-    .jdc_#{$name} {
+    .sw_#{$name} {
         background-image: url(/img/jdc_#{$name}.png);
     }
 }
 
 
 // CSS
-.jdc_list {
+.sw_list {
     background-image: url(/img/jdc_list.png);
     background-color: red;
 }
-.jdc_detail {
+.sw_detail {
     background-image: url(/img/jdc_detail.png);
     background-color: blue;
 }
 
 // SCSS
 @each $name, $color in (list, red), (detail, blue) {
-    .jdc_#{$name} {
+    .sw_#{$name} {
         background-image: url(/img/jdc_#{$name}.png);
         background-color: $color;
     }
@@ -320,7 +318,7 @@ $color: red;
 @function pxToRem($px) {
     @return $px / 10px * 1rem;
 }
-.jdc {
+.sw {
     font-size: pxToRem(12px);
 }
 ```
@@ -331,7 +329,7 @@ $color: red;
 运算符之间空出一个空格
 
 ```scss
-.jdc {
+.sw {
     width: 100px - 50px;
     height: 30px / 5;
 }
@@ -341,7 +339,7 @@ $color: red;
 
 ```scss
 // 正确的运算格式
-.jdc {
+.sw {
     width: 100px - 50px;
     width: 100px + 50px;
     width: 100px * 2;

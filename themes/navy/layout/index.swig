@@ -4,7 +4,6 @@
     <div id="banner-start" class="banner-start">
       <span id="banner-start-command" class="banner-start-command">{{ page.slogan }}</span><a id="banner-start-link" class="banner-start-link"  href="docs/"><i class="fa fa-arrow-right"></i></a>
     </div>
-    <div id="banner-share" class="banner-share">{{ partial('partial/share') }}</div>
   </div>
 </header>
 <div id="content-wrap" class="content-wrap">
